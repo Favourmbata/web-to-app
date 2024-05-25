@@ -13,12 +13,13 @@ const SignUp = ()=>{
     return(
         <div className={styles.container}>
             <div className={styles.leftSection}>
-                <img src={logo} alt={""} style={{padding: "10px 10px",marginTop:"20px"}}/>
-                <img src={handshake} alt={""} style={{padding: "10px 10px", width: "50%"}}/>
 
-                <div>
-                    <h2 style={{color: "white"}}>Partnership for Business Growth</h2>
-                    <p style={{color: "white", maxWidth: "400px",opacity:0.8}}>Partnerships are pivotal for business growth,
+                <img src={logo} alt={""} style={{padding: "10px 58px",marginBottom:"60px",width:"40%"}}/>
+                <img src={handshake} alt={""} style={{ width: "100%",height:"50px"}}/>
+
+                <div className={styles.partneshipContent}>
+                    <h2>Partnership for Business Growth</h2>
+                    <p style={{opacity:0.8}}>Partnerships are pivotal for business growth,
                         enabling companies to leverage mutual strengths,
                         share risks, and capitalize on opportunities.</p>
                 </div>
@@ -38,7 +39,7 @@ const SignUp = ()=>{
 
                 <div className={styles.formHeader}>
                     <div style={{padding: "10px 10px"}}>
-                        <h4>BECOME AN EXCLUSIVE MEMBERS</h4>
+                        <h5>BECOME AN EXCLUSIVE MEMBERS</h5>
                         <p>SIGN UP and join the partnership </p>
                     </div>
 
@@ -46,18 +47,22 @@ const SignUp = ()=>{
                         <form className={styles.fillForm}>
                             <div className={styles.inputContainer}>
                                 <img src={user} alt={""} className={styles.inputIcon}/>
-                                <input type="text" id="name" name="Name" className={styles.inputBtn}></input><br/><br/>
+                                <input type="text" id="name" name="Name"
+                                       placeholder="johnson Doe"
+                                       className={styles.inputBtn}></input><br/><br/>
                             </div>
 
                             <div className={styles.inputContainer}>
                                 <img src={iconMail} alt={""} className={styles.inputIcon}/>
                                 <input type="text" id="email" name="EmailAddress"
+                                       placeholder="example@gmail.com"
                                        className={styles.inputBtn}></input><br/><br/>
                             </div>
 
                             <div className={styles.inputContainer}>
                                 <img src={lock} alt={""} className={styles.inputIcon}/>
                                 <input type="text" id="password" name="Password"
+                                       placeholder="*********"
                                        className={styles.inputBtn}></input><br/><br/>
                             </div>
                         </form>
