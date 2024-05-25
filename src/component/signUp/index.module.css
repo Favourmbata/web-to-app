@@ -1,0 +1,124 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    padding: 12px 11px;
+    /*position: fixed;*/
+}
+.leftSection{
+    background-color: #00008B;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.inputBtn{
+    width: 80%;
+    height: 50px;
+    padding: 10px 10px 10px 40px;  /* Add left padding to make space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+.inputContainer{
+    position: relative;
+    width: 100%;
+}
+.inputIcon{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #00008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.returnHome{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+
+}
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.loginSection{
+   cursor: pointer;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    gap: 34px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.formHeader{
+    /*display: flex;*/
+    /*flex-direction: row; !* Horizontal layout on larger screens *!*/
+    /*align-items: center;*/
+    /*gap: 10px; !* Add some gap between the elements *!*/
+    margin-left: 12%; /* Adjust left margin */
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSection {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .topBar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*width: 90%;*/
+    }
+
+    .loginSection {
+        margin-top: 10px;
+    }
+
+    .fillForm {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 10px;
+    }
+    .footer p, .footer span {
+        margin: 10px 0; /* Add margin to create spacing between items */
+    }
+}
