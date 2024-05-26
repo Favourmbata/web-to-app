@@ -8,11 +8,9 @@ body{
 .container{
     display: flex;
     /*min-height: 100vh;*/
-    padding: 13px 12px;
-
-
-
+    padding: 14px 12px;
 }
+
 .leftSection{
     background-color: #00008B;
     width: 23%;

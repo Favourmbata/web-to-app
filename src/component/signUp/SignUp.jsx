@@ -12,7 +12,6 @@ const SignUp = ()=>{
 
     return (
         <div className={styles.container}>
-            <span>SIGN UP</span>
             <div className={styles.leftSection}>
 
                 <img src={logo} alt={""} style={{padding: "10px 58px", marginBottom: "60px", width: "40%"}}/>
@@ -41,7 +40,7 @@ const SignUp = ()=>{
                 <div className={styles.formHeader}>
                     <div style={{padding: "10px 10px"}}>
                         <h5>BECOME AN EXCLUSIVE MEMBERS</h5>
-                        <p>SIGN UP and join the partnership </p>
+                        <p>SIGN UP AND JOIN THE THE PARTNERSHIP </p>
                     </div>
 
                     <div>
