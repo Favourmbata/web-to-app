@@ -24,7 +24,7 @@ body{
     padding: 13px 11px;
 }
 .inputBtn{
-    width: 50%;
+    width: 60%;
     height: 50px;
     padding: 10px 10px 10px 40px;
     border: 1px solid #ccc;
@@ -46,7 +46,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 60%;
     gap: 10px;
     padding: 10px 20px;
     background-color: #00008B;
@@ -131,7 +131,10 @@ button {
         margin: 10px 0;
     }
     button{
-    width: 45%;
-        font-size: 13px;
+    width: 73%;
+
+    }
+    .inputBtn{
+        width: 80%;
     }
 }

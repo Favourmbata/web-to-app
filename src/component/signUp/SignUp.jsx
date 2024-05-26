@@ -10,16 +10,17 @@ import styles from "./index.module.css"
 import {Link} from "@mui/material";
 const SignUp = ()=>{
 
-    return(
+    return (
         <div className={styles.container}>
+            <span>SIGN UP</span>
             <div className={styles.leftSection}>
 
-                <img src={logo} alt={""} style={{padding: "10px 58px",marginBottom:"60px",width:"40%"}}/>
-                <img src={handshake} alt={""} style={{ width: "100%",height:"50px"}}/>
+                <img src={logo} alt={""} style={{padding: "10px 58px", marginBottom: "60px", width: "40%"}}/>
+                <img src={handshake} alt={""} style={{width: "100%", height: "50px"}}/>
 
                 <div className={styles.partneshipContent}>
                     <h2>Partnership for Business Growth</h2>
-                    <p style={{opacity:0.8}}>Partnerships are pivotal for business growth,
+                    <p style={{opacity: 0.8}}>Partnerships are pivotal for business growth,
                         enabling companies to leverage mutual strengths,
                         share risks, and capitalize on opportunities.</p>
                 </div>
@@ -27,10 +28,10 @@ const SignUp = ()=>{
             <div style={{padding: "10px", backgroundColor: "white"}}>
                 <div className={styles.topBar}>
                     <Link>
-                    <div className={styles.returnHome}>
-                        <img src={chevron} alt={""} style={{padding: "10px 10px"}}/>
-                        <span>return home</span>
-                    </div>
+                        <div className={styles.returnHome}>
+                            <img src={chevron} alt={""} style={{padding: "10px 10px"}}/>
+                            <span>return home</span>
+                        </div>
                     </Link>
                     <div className={styles.loginSection}>
                         <p>Already a member? <Link to="/login">LOGIN NOW</Link></p>
@@ -71,9 +72,9 @@ const SignUp = ()=>{
                 </div>
 
                 <div className={styles.footer}>
-                <p >&copy; 2021 - 2022 5Starcompany. All rights Reserved</p>
-                <span> <img src={info} alt={""}/> Need help? </span>
-                 </div>
+                    <p>&copy; 2021 - 2022 5Starcompany. All rights Reserved</p>
+                    <span> <img src={info} alt={""}/> Need help? </span>
+                </div>
             </div>
         </div>
     )
